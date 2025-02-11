@@ -37,7 +37,7 @@ while(true)
             }
         }
         if (isBuiltin) Console.WriteLine($"{h[1]} is a shell builtin");
-        else Console.WriteLine($"{h[1]}: command not found");
+        else Console.WriteLine($"{h[1]}: not found");
     }
     else
     {
