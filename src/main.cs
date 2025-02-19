@@ -55,7 +55,7 @@ while(true)
         }
         else if (OperatingSystem.IsLinux())
         {
-            string[] path = Environment.GetEnvironmentVariable("path").Split(':');
+            string[] path = Environment.GetEnvironmentVariable("PATH").Split(':');
             for (int i = 0; i < path.Length; i++)
             {
                 if (File.Exists($"{i}/{h[1]}"))
