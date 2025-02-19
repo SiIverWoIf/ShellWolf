@@ -30,6 +30,7 @@ while(true)
     else if (userInput.StartsWith("type "))
     {
         bool isBuiltin = false;
+        bool isFound = false;
         string[] h = userInput.Split();
         for (int i = 0; i < builtinCommands.Length; i++)
         {
@@ -65,8 +66,9 @@ while(true)
                 }
             }
         }
-        else 
-            Console.WriteLine($"{h[1]}: not found");
+
+        if (!isFound && !isBuiltin)
+            System.Console.WriteLine($"{h[1]}: not found");
     }
     else
     {
