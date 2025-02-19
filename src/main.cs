@@ -47,7 +47,7 @@ while(true)
             string[] path = Environment.GetEnvironmentVariable("path").Split(';');
             for (int i = 0; i < path.Length; i++)
             {
-                if (File.Exists($"{path[i]}\\{h[1]}.*"))
+                if (File.Exists($"{path[i]}\\{h[1]}"))
                 {
                     Console.WriteLine($"{h[1]} is {path[i]}\\{h[1]}");
                     isFound = true;
