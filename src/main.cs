@@ -50,6 +50,7 @@ while(true)
                 if (File.Exists($"{path[i]}\\{h[1]}.*"))
                 {
                     Console.WriteLine($"{h[1]} is {path[i]}\\{h[1]}");
+                    isFound = true;
                     break;
                 }
             }
@@ -61,6 +62,7 @@ while(true)
             {
                 if (File.Exists($"{path[i]}/{h[1]}"))
                 {
+                    isFound = true;
                     Console.WriteLine($"{h[1]} is {path[i]}/{h[1]}");
                     break;
                 }
